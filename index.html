@@ -6,32 +6,43 @@
 		<link rel="stylesheet" href="google_css.css">
 	</head>
 	<body>
-		<ul>
-			<li>Gmail</li><!--no img needed-->
-			<li>Images</li><!--no img needed-->
-			<li>Google Apps</li> <!--Will need to add image and alt-->
-			<li>Notifications</li> <!--Will need to add image and alt-->
-			<li>Google Account</li><!--Will need to add image and alt-->
-		</ul>
+		<div id="top">
+			<ul>
+				<li>Gmail</li><!--no img needed-->
+				<li>Images</li><!--no img needed-->
+				<li><div id="apps"><img src="images/googleapps.png" alt="google_apps" /></div></li><!--resize image--> 
+				<li><div id="notification"><img src="images/bell.png" alt="notification" /></div></li> <!--resize image-->
+				<li><div id="account">A</div></li><!--add circle in div-->
+			</ul>
+		</div>
 		
-		<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google_logo">
+		<div id="center">
+			<img src="images/googlelogo.png" alt="google_logo"/>
+		</div>
 
-		<form>
-			<input type="text" name="search"><br/>
-			<input type="submit" value="Google Search">
-			<input type="submit" value="I'm feeling lucky">
-		</form>
+		
+		<div id="search"> 
+			<form>
+				<input type="text" name="search"><br/>
+				<input type="submit" value="Google Search">
+				<input type="submit" value="I'm feeling lucky">
+			</form>
+		</div>
 
-		<ul> <!--left-->
-			<li>Advertising</li>
-			<li>Business</li>
-			<li>About</li>
-		</ul>
+		<div class="bottom" id="left">
+			<ul> <!--left-->
+				<li>Advertising</li>
+				<li>Business</li>
+				<li>About</li>
+			</ul>
+		</div>
 
-		<ul><!--right-->
-			<li>Privacy</li>
-			<li>Terms</li>
-			<li>Settings</li>
-		</ul>
+		<div class="bottom" id="right">
+			<ul><!--right-->
+				<li>Privacy</li>
+				<li>Terms</li>
+				<li>Settings</li>
+			</ul>
+		</div>
 	</body>
 </html>
